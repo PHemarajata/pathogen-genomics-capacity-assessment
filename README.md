@@ -1,14 +1,10 @@
-# Pathogen Genomics Capacity Assessment
+<img src="docs/assets/readme-hero.png" alt="Pathogen Genomics Capacity Assessment — a field-tested instrument set for assessing pathogen genomics laboratory capacity, built for reuse. APHL Global Health, MADE Initiative. Three standalone HTML instruments; current release Full Baseline v8, Short Form v4, Annex v1; no server, no internet, no installation." width="100%">
 
-**A field-tested instrument set for assessing pathogen genomics laboratory capacity, built for reuse.**
-
-Developed by APHL Global Health under the MADE Initiative. First deployed across three laboratories at the Research Institute for Tropical Medicine (Manila, Philippines) in May 2026; revised into the current release from what that round exposed.
-
----
+<br>
 
 ## What this is
 
-A structured assessment system for pathogen genomics (NGS) laboratory capacity, delivered as three self-contained HTML instruments:
+A structured assessment system for pathogen genomics (NGS) laboratory capacity, delivered as three self-contained HTML instruments. Each runs in any modern browser — including on a tablet at the bench — auto-saves locally as you type and exports structured data.
 
 | Instrument | Version | When it's used | Respondent | Time |
 |---|---|---|---|---|
@@ -16,32 +12,22 @@ A structured assessment system for pathogen genomics (NGS) laboratory capacity, 
 | [**Full Baseline**](instruments/NGS_Assessment_Full_Baseline_-_APHL_v8.1__standalone_.html) | v8.1 | On site, over 1–2 days | Laboratory team, with assessor | 1–2 days |
 | [**Enabling Environment Annex**](instruments/NGS_Assessment_Leadership_Annex_-_APHL_v1.1__standalone_.html) | v1.1 | Once per site, with institutional leadership | Leadership (ministry participation where possible) | Half day |
 
-Each instrument is a single HTML file. **No server, no subscription, no internet connection, no installation.** They run in any modern browser — including on a tablet at the bench — auto-save locally as you type, and export structured data.
-
 ## Getting started
 
-1. Download the instrument you need from [`instruments/`](instruments/) (open the file, then use the **Download raw file** button — or grab everything via **Code → Download ZIP**).
+1. Download the instrument you need from [`instruments/`](instruments/) — open the file, then use **Download raw file**, or grab everything via **Code → Download ZIP**.
 2. Open the file in a browser. It works fully offline.
-3. Use **Load demo data** to populate an illustrative composite laboratory — built for assessor training and demonstration, containing the patterns worth discussing. It is not any real laboratory.
+3. Use **Load demo data** to populate an illustrative composite laboratory — built for assessor training and demonstration. It is not any real laboratory.
 4. Responses persist in the browser between sessions. The **Assessment Summary** view (toolbar) and the text export are available at any point.
 
-Each instrument carries a build stamp — in the page footer, in the hero panel, and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1, Short Form v4.1, and Enabling Environment Annex v1.1, all build **2026-08-08b**. If you report a problem, start by identifying which build was open.
+> Each instrument carries a build stamp — in the page footer, in the hero panel and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build **2026-08-08b**. If you report a problem, start by identifying which build was open.
 
 ## What makes it different
 
-**It routes every finding to the level that can act on it.** Roughly a third of what a laboratory assessment surfaces is not a laboratory problem — procurement lead times, employment modality, data retention policy, multi-year funding. Every finding carries a constraint-level tag (laboratory / institution / above the institution), and reports are structured the same way, so the national-level section can be quoted directly by laboratory leadership in upward communication.
-
-**It measures continuity, not headcount.** For each of twelve laboratory functions: how many people can perform it independently, and what happens if the usual person is unavailable for two weeks. Single-point-of-failure exposure falls out of the answers rather than being asked about directly.
-
-**It distinguishes what partners actually provide.** Each partnership is recorded across what flows (cash, in-kind reagents, equipment, technical assistance, sequencing performed by the partner), through what channel, under what instrument, ending when, and what stops if it ends — yielding funding concentration, cash/in-kind splits, an expiry calendar, and a map of single-point dependencies.
-
-**It is anchored to clinical laboratory standards.** Questions are built against ISO 15189:2022 and relevant CLSI guidance — EP49 (clinical validity), MM24 (bacterial WGS and strain typing), EP12-A2 (qualitative test performance). Validation status is captured per assay, not per laboratory, and analytical validation is separated from clinical validation.
-
-**It produces two outputs for two audiences, without conflating them.** A narrative report for the laboratory and its partners, and a separate internal domain-maturity summary for program management. No total score, no ranking between laboratories — deliberately, because an instrument that produces a score a laboratory can be judged on changes what laboratories tell you.
+<img src="docs/assets/readme-differentiators.png" alt="Five differentiators: routes every finding to the level that can act on it; measures continuity, not headcount; distinguishes what partners actually provide; anchored to clinical laboratory standards (ISO 15189:2022, CLSI EP49, MM24, EP12-A2); two outputs for two audiences without conflating them." width="100%">
 
 ## The maturity scale
 
-A five-level scale is applied to a defined subset of questions (physical facts, counts, and dates stay binary or numeric):
+A five-level scale is applied to a defined subset of questions (physical facts, counts and dates stay binary or numeric):
 
 | Level | Meaning |
 |---|---|
@@ -55,7 +41,7 @@ The laboratory self-rates eight domains; the assessor rates the same eight indep
 
 ## Why it transfers
 
-Nothing in the laboratory instruments is country-specific. Application modules select automatically based on the sequencing work a laboratory actually performs, so the same instrument serves a viral surveillance laboratory, a bacterial AMR reference laboratory, and a laboratory in its first year of build-out. Country-specific policy context lives in the Enabling Environment Annex — which is what makes multi-country use possible: the laboratory instrument stays constant (findings comparable across countries) while the annex absorbs the regulatory, procurement, and employment contexts that differ everywhere.
+Nothing in the laboratory instruments is country-specific. Application modules select automatically based on the sequencing work a laboratory actually performs, so the same instrument serves a viral surveillance laboratory, a bacterial AMR reference laboratory and a laboratory in its first year of build-out. Country-specific policy context lives in the Enabling Environment Annex — the laboratory instrument stays constant (findings comparable across countries) while the annex absorbs the regulatory, procurement and employment contexts that differ everywhere.
 
 A new country deployment requires: assessor familiarization (about half a day), 2–3 days on site for a three-laboratory site, access to institutional leadership for the annex, and local adaptation limited to the annex and regulatory references.
 
@@ -90,10 +76,6 @@ Planned for the next cycle (target: Q4 2026): a version crosswalk and repeat-ass
 
 The instruments embed key framing, but four points bear repeating: Section N of the Full Baseline is the assessor's record and should not be visible to the laboratory mid-visit; the validation walkthrough is a documentation walkthrough, not an audit — say so out loud; a capability accessed at another laboratory is recorded as *accessed*, not absent; and maturity ratings do not go in the partner-facing report.
 
-## Attribution
+<br>
 
-APHL Global Health, Southeast Asia. Pathogen Genomics Capacity Assessment, 2026. Developed under the MADE Initiative.
-
-## License
-
-No license has been applied yet; all rights reserved. If you are interested in using or adapting the instruments, please open an issue or get in touch.
+<img src="docs/assets/readme-footer.png" alt="APHL Global Health, Southeast Asia. Pathogen Genomics Capacity Assessment, 2026. Developed under the MADE Initiative. No license has been applied yet; all rights reserved — to use or adapt the instruments, open an issue or get in touch. Association of Public Health Laboratories · aphl.org · Build 2026-08-08b" width="100%">
