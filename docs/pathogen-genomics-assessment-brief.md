@@ -1,4 +1,4 @@
-# APHL Pathogen Genomics Capacity Assessment
+# APHL Pathogen Genomic Surveillance Capacity Assessment
 
 ## A field-tested instrument for genomic surveillance capacity, built for reuse
 
@@ -6,7 +6,7 @@
 
 ### What it is
 
-A structured assessment system for pathogen genomics laboratory capacity, built by APHL Global Health under the MADE Initiative. It has three parts:
+A structured assessment system for laboratory capacity in pathogen genomic surveillance, built by APHL Global Health under the MADE Initiative. It has three parts:
 
 - A **short form** sent to the laboratory two to three weeks ahead, completed by one senior respondent in about 30 minutes, used to scope the visit
 - A **full baseline** administered on site over one to two days, covering infrastructure through financial sustainability, with application-specific modules that select automatically based on what the laboratory actually does
@@ -97,4 +97,4 @@ Target is a revised instrument set in the last quarter of 2026.
 
 ---
 
-APHL Global Health, Southeast Asia. Pathogen Genomics Capacity Assessment, 2026.*
+APHL Global Health, Southeast Asia. Pathogen Genomic Surveillance Capacity Assessment, 2026.*

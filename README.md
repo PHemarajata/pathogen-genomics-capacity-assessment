@@ -1,10 +1,10 @@
-<img src="docs/assets/readme-hero.png" alt="Pathogen Genomics Capacity Assessment — a field-tested instrument set for assessing pathogen genomics laboratory capacity, built for reuse. APHL Global Health, MADE Initiative. Three standalone HTML instruments; current release Full Baseline v8, Short Form v4, Annex v1; no server, no internet, no installation." width="100%">
+<img src="docs/assets/readme-hero.png" alt="Pathogen Genomic Surveillance Capacity Assessment. A field-tested instrument set for assessing laboratory capacity for pathogen genomic surveillance, built for reuse. APHL Global Health, MADE Initiative. Three standalone HTML instruments. Current release Full Baseline v8, Short Form v4, Annex v1. No server, no internet, no installation." width="100%">
 
 <br>
 
 ## What this is
 
-A structured assessment system for pathogen genomics (NGS) laboratory capacity, delivered as three self-contained HTML instruments. Each runs in any modern browser — including on a tablet at the bench — auto-saves locally as you type and exports structured data.
+A structured assessment system for laboratory capacity in pathogen genomic surveillance, delivered as three self-contained HTML instruments. Each runs in any modern browser — including on a tablet at the bench — auto-saves locally as you type and exports structured data.
 
 | Instrument | Version | When it's used | Respondent | Time |
 |---|---|---|---|---|
@@ -19,7 +19,7 @@ A structured assessment system for pathogen genomics (NGS) laboratory capacity, 
 3. Use **Load demo data** to populate an illustrative composite laboratory — built for assessor training and demonstration. It is not any real laboratory.
 4. Responses persist in the browser between sessions. The **Assessment Summary** view (toolbar) and the text export are available at any point.
 
-> Each instrument carries a build stamp — in the page footer, in the hero panel and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build **2026-08-08b**. If you report a problem, start by identifying which build was open.
+> Each instrument carries a build stamp — in the page footer, in the hero panel and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build **2026-11-12a**. If you report a problem, start by identifying which build was open.
 
 ## What makes it different
 
@@ -41,7 +41,7 @@ The laboratory self-rates eight domains; the assessor rates the same eight indep
 
 ## Why it transfers
 
-Nothing in the laboratory instruments is country-specific. Application modules select automatically based on the sequencing work a laboratory actually performs, so the same instrument serves a viral surveillance laboratory, a bacterial AMR reference laboratory and a laboratory in its first year of build-out. Country-specific policy context lives in the Enabling Environment Annex — the laboratory instrument stays constant (findings comparable across countries) while the annex absorbs the regulatory, procurement and employment contexts that differ everywhere.
+Nothing in the laboratory instruments is country-specific. Application modules select automatically based on the genomic surveillance work a laboratory actually performs, so the same instrument serves a viral surveillance laboratory, a bacterial AMR reference laboratory and a laboratory in its first year of build-out. Country-specific policy context lives in the Enabling Environment Annex — the laboratory instrument stays constant (findings comparable across countries) while the annex absorbs the regulatory, procurement and employment contexts that differ everywhere.
 
 A new country deployment requires: assessor familiarization (about half a day), 2–3 days on site for a three-laboratory site, access to institutional leadership for the annex, and local adaptation limited to the annex and regulatory references.
 
@@ -55,6 +55,7 @@ instruments/
 docs/
   pathogen-genomics-assessment-brief.md / .pdf                 Two-page overview of the system
   release-notes-v8-v4-2026-08.md / .pdf                        Full release notes for the current builds
+  covers/                                                      Printable A4 cover for each instrument (PDF)
 CHANGELOG.md                                                   Version history at a glance
 ```
 
@@ -78,4 +79,4 @@ The instruments embed key framing, but four points bear repeating: Section N of 
 
 <br>
 
-<img src="docs/assets/readme-footer.png" alt="APHL Global Health, Southeast Asia. Pathogen Genomics Capacity Assessment, 2026. Developed under the MADE Initiative. No license has been applied yet; all rights reserved — to use or adapt the instruments, open an issue or get in touch. Association of Public Health Laboratories · aphl.org · Build 2026-08-08b" width="100%">
+<img src="docs/assets/readme-footer.png" alt="APHL Global Health, Southeast Asia. Pathogen Genomic Surveillance Capacity Assessment, 2026. Developed under the MADE Initiative. No license has been applied yet, all rights reserved. To use or adapt the instruments, open an issue or get in touch. Association of Public Health Laboratories · aphl.org · Build 2026-11-12a" width="100%">
