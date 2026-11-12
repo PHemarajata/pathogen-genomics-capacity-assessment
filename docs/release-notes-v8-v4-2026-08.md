@@ -1,8 +1,10 @@
 # Release notes: Full Baseline v8, Short Form v4 and Enabling Environment Annex v1
 
-APHL Global Health, Pathogen Genomics Capacity Assessment. August 2026.
+APHL Global Health, Pathogen Genomic Surveillance Capacity Assessment. August 2026.
 
 Supersedes Full Baseline v7 and Short Form v3. Adds the Institutional and National Enabling Environment Annex v1, which is new.
+
+**Update, November 2026 (build 2026-11-12a).** The instrument set is now called the Pathogen Genomic Surveillance Capacity Assessment. The new name appears in page titles, headers, the hero panel, footers, export headers and the A4 covers. Questions, storage keys and scoring are unchanged, so assessments already in progress load as before. Two leftovers from the Full Baseline template were also corrected in the Annex. Its loading screen now carries the Annex name, and its export downloads as `Enabling_Environment_Annex_v1.1.txt` instead of under the Full Baseline file name. The Full Baseline export now downloads as `Pathogen_Genomic_Surveillance_Full_Baseline_v8.1.txt`.
 
 ---
 
@@ -236,7 +238,7 @@ Every instrument now carries a build stamp. It appears in the page footer, in th
 
 Each instrument also installs its own error handler. The standalone wrapper catches window errors and prints them prefixed with `[bundle]`, reporting the wrapper's own line number rather than the instrument's, which makes them impossible to trace. The new handler logs the real message, source file, line and stack to the browser console. A `[bundle]` line on its own is not diagnostic; the console entry beneath it is.
 
-Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build 2026-08-08b. Filenames carry the version so a new download cannot be confused with an earlier one sitting in the same folder.
+Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build 2026-11-12a. Filenames carry the version so a new download cannot be confused with an earlier one sitting in the same folder.
 
 ---
 

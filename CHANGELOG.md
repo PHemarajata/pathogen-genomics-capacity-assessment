@@ -2,6 +2,16 @@
 
 Full detail for every release lives in [docs/release-notes-v8-v4-2026-08.md](docs/release-notes-v8-v4-2026-08.md).
 
+## Build 2026-11-12a (November 2026)
+
+**Full Baseline v8.1 · Short Form v4.1 · Enabling Environment Annex v1.1**
+
+- **Renamed** to the Pathogen Genomic Surveillance Capacity Assessment. The new name appears in page titles, headers, the hero panel, footers, export headers, the A4 covers and this repository. Questions, storage keys and scoring are unchanged, so assessments already in progress load as before.
+- **Annex:** the loading screen and the export file name no longer carry Full Baseline names. The export now downloads as `Enabling_Environment_Annex_v1.1.txt`.
+- **Full Baseline:** the export now downloads as `Pathogen_Genomic_Surveillance_Full_Baseline_v8.1.txt`.
+- **All instruments:** the header label is hidden below 860 px wide, so the longer name does not wrap to five lines on a tablet. The hero panel still shows it.
+- **Added:** printable A4 covers for each instrument in `docs/covers/`.
+
 ## Build 2026-08-08b — August 2026
 
 **Full Baseline v8.1 · Short Form v4.1 · Enabling Environment Annex v1.1**
