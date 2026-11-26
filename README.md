@@ -19,7 +19,7 @@ A structured assessment system for laboratory capacity in pathogen genomic surve
 3. Use **Load demo data** to populate an illustrative composite laboratory — built for assessor training and demonstration. It is not any real laboratory.
 4. Responses persist in the browser between sessions. The **Assessment Summary** view (toolbar) and the text export are available at any point.
 
-> Each instrument carries a build stamp — in the page footer, in the hero panel and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build **2026-11-12a**. If you report a problem, start by identifying which build was open.
+> Each instrument carries a build stamp — in the page footer, in the hero panel and on `window.__BUILD` in the browser console. Current builds are Full Baseline v8.1 and Short Form v4.1 at build **2026-11-12a**, and Enabling Environment Annex v1.1 at build **2026-11-16a**. If you report a problem, start by identifying which build was open.
 
 ## What makes it different
 
@@ -69,7 +69,7 @@ Backward compatibility: storage keys are unchanged, so a partially completed v7/
 
 ## Status and roadmap
 
-The current builds are verified programmatically, in a headless DOM, and through headless Chromium (page load, demo data, summary generation, annex extract — no console errors, no failed start-up steps). They have **not yet been pilot-tested with a live respondent**; that is the remaining check before the next visit.
+The current builds are verified programmatically, in a headless DOM, and through headless Chromium (page load, demo data, summary generation, annex confirmation sheets — no console errors, no failed start-up steps). They have **not yet been pilot-tested with a live respondent**; that is the remaining check before the next visit.
 
 Planned for the next cycle (target: Q4 2026): a version crosswalk and repeat-assessment mode (needed before October results are compared to May), the site synthesis report template, the domain maturity summary document, the assessor briefing document, and a machine-readable gaps export.
 
@@ -79,4 +79,4 @@ The instruments embed key framing, but four points bear repeating: Section N of 
 
 <br>
 
-<img src="docs/assets/readme-footer.png" alt="APHL Global Health, Southeast Asia. Pathogen Genomic Surveillance Capacity Assessment, 2026. Developed under the MADE Initiative. No license has been applied yet, all rights reserved. To use or adapt the instruments, open an issue or get in touch. Association of Public Health Laboratories · aphl.org · Build 2026-11-12a" width="100%">
+<img src="docs/assets/readme-footer.png" alt="APHL Global Health, Southeast Asia. Pathogen Genomic Surveillance Capacity Assessment, 2026. Developed under the MADE Initiative. No license has been applied yet, all rights reserved. To use or adapt the instruments, open an issue or get in touch. Association of Public Health Laboratories · aphl.org · Latest build 2026-11-16a" width="100%">

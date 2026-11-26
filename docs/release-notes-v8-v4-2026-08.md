@@ -6,6 +6,8 @@ Supersedes Full Baseline v7 and Short Form v3. Adds the Institutional and Nation
 
 **Update, November 2026 (build 2026-11-12a).** The instrument set is now called the Pathogen Genomic Surveillance Capacity Assessment. The new name appears in page titles, headers, the hero panel, footers, export headers and the A4 covers. Questions, storage keys and scoring are unchanged, so assessments already in progress load as before. Two leftovers from the Full Baseline template were also corrected in the Annex. Its loading screen now carries the Annex name, and its export downloads as `Enabling_Environment_Annex_v1.1.txt` instead of under the Full Baseline file name. The Full Baseline export now downloads as `Pathogen_Genomic_Surveillance_Full_Baseline_v8.1.txt`.
 
+**Update, November 16, 2026 (Annex build 2026-11-16a).** The Annex's laboratory confirmation extract is now called the laboratory confirmation sheet. Only the wording changed. The storage key is the same, so annexes already in progress keep their answers.
+
 ---
 
 ## Why this release exists
@@ -196,9 +198,9 @@ It exists because about a third of what a laboratory assessment surfaces is not 
 
 **J. Assessor synthesis.** Six enabling-environment domains, E1 to E6, with written level anchors and a leadership self-rating alongside the assessor rating. Evidence basis per section. A findings log where every row carries the level, **who specifically can decide**, the next step and the laboratories affected. A finding routed to "the ministry" is not actionable; one routed to a named role with a next step is. And a written paragraph for the site synthesis on what the laboratories cannot fix, which is the passage laboratory leadership can quote upward.
 
-**Laboratory confirmation extract.** A separate view generating one printable page per laboratory, listing only the findings that bear on it with agree and comment boxes and a signature line. This is how laboratories stay in the record without being asked the same questions a third time. Findings tagged "All" appear on every extract; findings naming particular laboratories appear only on theirs.
+**Laboratory confirmation sheets.** A separate view generating one printable page per laboratory, listing only the findings that bear on it with agree and comment boxes and a signature line. This is how laboratories stay in the record without being asked the same questions a third time. Findings tagged "All" appear on every sheet; findings naming particular laboratories appear only on theirs.
 
-**Verification.** Renders ten sections with no runtime errors, no leakage of baseline-specific content, distinct storage key, and clean runs of demo load, summary, extract generation, divergence computation, persistence and export.
+**Verification.** Renders ten sections with no runtime errors, no leakage of baseline-specific content, distinct storage key, and clean runs of demo load, summary, confirmation sheet generation, divergence computation, persistence and export.
 
 **Fixed before release, and confirmed in a real browser.** The first annex build inherited `updateModuleVisibility()` from the baseline, which drives the Section G application modules. The annex has no modules, so the function threw on a missing element during start-up. Because it was called part-way through `initApp()`, everything after it was skipped: the auto-save listeners never attached, so nothing was saved; panels did not close on Escape; and derived readouts did not compute on load. The sections themselves rendered, which is why it was not obvious.
 
@@ -238,7 +240,7 @@ Every instrument now carries a build stamp. It appears in the page footer, in th
 
 Each instrument also installs its own error handler. The standalone wrapper catches window errors and prints them prefixed with `[bundle]`, reporting the wrapper's own line number rather than the instrument's, which makes them impossible to trace. The new handler logs the real message, source file, line and stack to the browser console. A `[bundle]` line on its own is not diagnostic; the console entry beneath it is.
 
-Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, all build 2026-11-12a. Filenames carry the version so a new download cannot be confused with an earlier one sitting in the same folder.
+Current builds are Full Baseline v8.1, Short Form v4.1 and Enabling Environment Annex v1.1, with the Full Baseline and Short Form at build 2026-11-12a and the Annex at build 2026-11-16a. Filenames carry the version so a new download cannot be confused with an earlier one sitting in the same folder.
 
 ---
 
@@ -270,7 +272,7 @@ Both re-embedded in their original standalone wrappers with fonts and APHL asset
 
 A separate init-integrity harness now runs against the shipped standalone files rather than the sources, and checks each instrument in the state it reaches after a natural page load: no uncaught errors, no failed start-up steps, every `getElementById` target present in the DOM, and, most importantly, that typing into a field actually persists to storage. All three pass. This check exists because the annex defect described above was invisible to the functional tests, which called each function by hand and so never observed that start-up had aborted.
 
-All three instruments have also been driven through headless Chromium: page load, demo dataset, summary generation and, for the annex, the laboratory extract. No console errors, no page errors, no failed start-up steps in any of them. This is the check that should have been run before the annex shipped, and it is now part of the release procedure.
+All three instruments have also been driven through headless Chromium: page load, demo dataset, summary generation and, for the annex, the laboratory confirmation sheets. No console errors, no page errors, no failed start-up steps in any of them. This is the check that should have been run before the annex shipped, and it is now part of the release procedure.
 
 Two dead controls were removed while doing this. "Expand all" and "Collapse all" called no-op stubs left over from an earlier collapsible design and did nothing in either instrument.
 

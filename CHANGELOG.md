@@ -2,6 +2,14 @@
 
 Full detail for every release lives in [docs/release-notes-v8-v4-2026-08.md](docs/release-notes-v8-v4-2026-08.md).
 
+## Build 2026-11-16a (November 2026)
+
+**Enabling Environment Annex v1.1**
+
+- **Annex:** the laboratory confirmation extract is now called the laboratory confirmation sheet, in the button, the view heading and the column that marks which laboratories receive one. Only the wording changed. The storage key is the same, so annexes already in progress keep their answers.
+- **Cover:** the Annex A4 cover now shows build 2026-11-16a.
+- Full Baseline v8.1 and Short Form v4.1 are unchanged at build 2026-11-12a.
+
 ## Build 2026-11-12a (November 2026)
 
 **Full Baseline v8.1 · Short Form v4.1 · Enabling Environment Annex v1.1**
@@ -40,7 +48,7 @@ Stays at ~30 minutes; no maturity ratings added. Adds an eight-row assay portfol
 
 ## Enabling Environment Annex v1 — August 2026 (new instrument)
 
-Administered once per site with institutional leadership. Ten sections covering establishment and employment, procurement decision grid, budget cycle, data governance, access and benefit sharing, national strategy, shared infrastructure and continuity, accreditation and regulatory pathway, and assessor synthesis with findings routed to named decision roles. Generates a one-page confirmation extract per laboratory.
+Administered once per site with institutional leadership. Ten sections covering establishment and employment, procurement decision grid, budget cycle, data governance, access and benefit sharing, national strategy, shared infrastructure and continuity, accreditation and regulatory pathway, and assessor synthesis with findings routed to named decision roles. Generates a one-page confirmation sheet per laboratory.
 
 ## Earlier
 
